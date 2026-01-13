@@ -1,0 +1,13 @@
+{
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
+    },
+    "autoload": {
+        "classmap": [
+            "includes/"
+        ],
+        "files": [
+            "lib/functions.php"
+        ]
+    }
+}

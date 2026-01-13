@@ -1,0 +1,12 @@
+[13-Jan-2026 17:52:42 Europe/Berlin] PHP Warning:  Undefined variable $a in E:\xampp2\htdocs\database-project\errors.php on line 22
+[13-Jan-2026 17:52:42 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\xampp2\htdocs\database-project\errors.php on line 22
+[13-Jan-2026 17:56:37 Europe/Berlin] PHP Warning:  Undefined variable $a in E:\xampp2\htdocs\database-project\errors.php on line 22
+[13-Jan-2026 17:56:37 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\xampp2\htdocs\database-project\errors.php on line 22
+[13-Jan-2026 17:56:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class FatalErrorHandler could not be converted to string in E:\xampp2\htdocs\database-project\errors.php:24
+Stack trace:
+#0 E:\xampp2\htdocs\database-project\index.php(8): require_once()
+#1 {main}
+  thrown in E:\xampp2\htdocs\database-project\errors.php on line 24
+[13-Jan-2026 18:03:42 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "echo" in E:\xampp2\htdocs\database-project\includes\class-fatal-error-handling.php on line 29
+[13-Jan-2026 18:04:25 Europe/Berlin] PHP Warning:  Undefined variable $a in E:\xampp2\htdocs\database-project\errors.php on line 26
+[13-Jan-2026 18:04:25 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\xampp2\htdocs\database-project\errors.php on line 26
