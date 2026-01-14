@@ -22,13 +22,10 @@ class FatalErrorHandler
         try {
             $error = $this->detectError();
             // echo 'error';
-            print_r($error);
             // if (!$error) {
             //     return;
             // }
             $this->log($error);
-            echo 'headers';
-            echo headers_sent();
             if (!headers_sent()) {
                 $this->displayErrorPage($error);
             }
@@ -71,13 +68,15 @@ class FatalErrorHandler
 
     protected function displayErrorPage(array $error): void
     {
-        http_response_code(500);
-        $template = ABSPATH . 'templates/error.php';
+        if ( ! APP_DEBUG ) {
+            http_response_code(500);
+            $template = ABSPATH . 'templates/error.php';
 
-        if (is_readable($template)) {
-            require $template;
-        } else {
-            echo "A critical error occurred.";
+            if (is_readable($template)) {
+                require $template;
+            } else {
+                echo "A critical error occurred.";
+            }
         }
     }
 }
