@@ -22,5 +22,5 @@ if (defined('APP_LOG_DEBUG') && APP_LOG_DEBUG) {
 }
 // echo
 // echo $a['dd'];
-$handler = new FatalErrorHandler();
-$handler->register();
+// $handler = new FatalErrorHandler();
+// $handler->register();

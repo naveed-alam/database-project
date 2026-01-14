@@ -19,7 +19,9 @@ class FatalErrorHandler
 
     public function handle(): void
     {
+        echo 'test1';
         try {
+            echo 'test2';
             $error = $this->detectError();
             // echo 'error';
             // if (!$error) {
@@ -62,7 +64,7 @@ class FatalErrorHandler
             $error['file'],
             $error['line']
         );
-
+echo 'test';
         error_log($message, 3, LOG_PATH);
     }
 
