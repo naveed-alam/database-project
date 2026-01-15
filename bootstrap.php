@@ -4,5 +4,5 @@ require_once ABSPATH . 'vendor/autoload.php';
 $handler = new \FatalErrorHandler();
 $handler->register();
 
-global $wpdb;
-$wpdb = new Database();
+global $dbconnection;
+$dbconnection = new Database();
