@@ -8,5 +8,5 @@ define('DB_PREFIX', 'ds_');
 
 define('LOG_PATH', ABSPATH . 'error.log');
 // App settings
-define('APP_DEBUG', true);
-define('APP_LOG_DEBUG', true);
+define('APP_DEBUG', false);
+define('APP_LOG_DEBUG', false);
