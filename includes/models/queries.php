@@ -20,3 +20,15 @@ class Get_Data {
         $this->db->delete($table, $where);
     }
 }
+
+
+// $db   = new Database();
+// $meta = new MetaRepository($db);
+// $posts = new PostRepository($db, $meta);
+// $users = new UserRepository($db, $meta);
+// // Add meta to post
+// $meta->add($posts, 10, 'color', 'red');
+// // Get meta
+// $meta->get($users, 5, 'timezone');
+// // Delete post (meta auto-deleted)
+// $posts->delete(10);
